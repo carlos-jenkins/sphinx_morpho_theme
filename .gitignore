@@ -1,0 +1,20 @@
+*.py[cod]
+__pycache__
+
+# Packages
+*.egg
+*.egg-info
+dist/*
+build/*
+
+# Sphinx
+doc/_build/*
+doc/sphinx_morpho_theme/*
+
+# Tox
+.tox/*
+.cache/*
+.coverage
+
+# Misc
+*~

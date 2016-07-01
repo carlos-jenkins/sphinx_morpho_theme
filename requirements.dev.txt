@@ -1,0 +1,21 @@
+########################
+# Coding style         #
+#######################
+
+flake8
+pep8-naming
+
+#######################
+# Testing             #
+#######################
+
+pytest
+pytest-cov
+
+#######################
+# Documentation       #
+#######################
+
+sphinx
+autoapi
+plantweb

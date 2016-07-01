@@ -1,0 +1,11 @@
+{
+    "author": "Carlos Jenkins",
+    "email": "carlos@jenkins.co.cr",
+    "repo_name": "sphinx_morpho_theme",
+    "repo_url": "https://github.com/carlos-jenkins/sphinx_morpho_theme",
+    "doc_url": "https://sphinx_morpho_theme.readthedocs.org/",
+    "project_name": "Sphinx Morpho Theme",
+    "short_description": "Clean, materialized theme for Sphinx",
+    "year": "2016",
+    "version": "0.1.0"
+}
