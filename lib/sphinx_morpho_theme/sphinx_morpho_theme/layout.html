@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--Declare encoding-->
+    <meta charset="UTF-8">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <!--Import Google Roboto and Material Icon Font-->
     <link
       type="text/css" rel="stylesheet"
@@ -10,27 +16,78 @@
     <!--Import Materialize CSS Framework-->
     <link
       type="text/css" rel="stylesheet" media="screen,projection"
-      href="libs/materialize-0.97.6/materialize.min.css"
+      href="{{ pathto('_static/libs/materialize-0.97.6/css/materialize.min.css', True) }}"
     />
 
-    <!--Declare encoding-->
-    <meta charset="UTF-8">
+    <!--Load Morpho CSS-->
+    <link
+      type="text/css" rel="stylesheet"
+      href="{{ pathto('_static/css/morpho.css', True) }}"
+    />
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Load user Pygments CSS-->
+    <link
+      type="text/css" rel="stylesheet"
+      href="{{ pathto('_static/pygments.css', True) }}"
+    />
+
+    <!--Load other Sphinx registered CSSs-->
+    {% for cssfile in css_files -%}
+    <link
+      type="text/css" rel="stylesheet"
+      href="{{ pathto(cssfile, 1) }}"
+    />
+    {%- endfor %}
+
+    <!--Load user override CSS-->
+    {% if style -%}
+    <link
+      type="text/css" rel="stylesheet"
+      href="{{ pathto('_static/' + style, True) }}"
+    />
+    {%- endif %}
+
   </head>
 
   <body>
 
-    <!--Import libraries-->
-    <script
-      type="text/javascript"
-      src="libs/jquery-2.1.1/js/jquery.min.js">
-    </script>
+    <div class="morpho_viewport">
 
-    <script
-      type="text/javascript"
-      src="libs/materialize-0.97.6/js/materialize.min.js">
-    </script>
+      <!--START block body-->
+      {% block body %} {% endblock %}
+      <!--END block body-->
+
+    </div>
+
+    <!--Load scripts-->
+    <div class="morpho_scripts">
+
+      <!--Load libraries-->
+      <script
+        type="text/javascript"
+        src="{{ pathto('_static/libs/jquery-2.1.1/js/jquery.min.js', True) }}"
+      </script>
+
+      <script
+        type="text/javascript"
+        src="{{ pathto('_static/libs/materialize-0.97.6/js/materialize.min.js', True) }}"
+      </script>
+
+      <!--Load Morpho-->
+      <script
+        type="text/javascript"
+        src="{{ pathto('_static/js/morpho.js', True) }}"
+      </script>
+
+      <!--Load other Sphinx registered JSs-->
+      {% for scriptfile in script_files -%}
+      <script
+        type="text/javascript"
+        src="{{ pathto(scriptfile, 1) }}"
+      </script>
+      {%- endfor %}
+
+    </div>
+
   </body>
 </html>
