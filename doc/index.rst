@@ -1,16 +1,9 @@
-.. toctree::
-   :hidden:
-
-   developer
-   sphinx_morpho_theme/sphinx_morpho_theme
-
 ===================
 Sphinx Morpho Theme
 ===================
 
-.. container:: float-right
-
-   .. image:: _static/images/logo.png
+.. image:: _static/images/logo.png
+   :align: right
 
 Clean, materialized theme for Sphinx
 
@@ -18,8 +11,12 @@ Clean, materialized theme for Sphinx
 Documentation
 =============
 
-- :doc:`Developer Guide. <developer>`
-- :doc:`Internal Documentation Reference. <sphinx_morpho_theme/sphinx_morpho_theme>`
+.. toctree::
+   :maxdepth: 1
+
+   developer
+   Test Document <rst/language>
+   API Reference <api/sphinx_morpho_theme>
 
 
 Development

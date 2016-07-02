@@ -1,1 +1,37 @@
-/* Theme CSS */
+/*********************
+ * Basic style
+ *********************/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #3a4145;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+}
+
+
+/*********************
+ * reStructuredText
+ *********************/
+
+/* Images */
+
+img.align-right,
+div.figure.align-right {
+    float: right;
+}
+
+img.align-left,
+div.figure.align-left {
+    float: left;
+}
+
+/* Responsive images */
+.container-wrapper img,
+object[type="image/svg+xml"] {
+    max-width: 100%;
+    height: auto;
+}

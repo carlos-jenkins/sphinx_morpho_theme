@@ -9,7 +9,7 @@ build/*
 
 # Sphinx
 doc/_build/*
-doc/sphinx_morpho_theme/*
+doc/api/*
 
 # Tox
 .tox/*

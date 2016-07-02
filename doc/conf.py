@@ -285,7 +285,9 @@ texinfo_documents = [
 
 # autoapi configuration
 autoapi_modules = {
-    'sphinx_morpho_theme': None
+    'sphinx_morpho_theme': {
+        'output': 'api'
+    }
 }
 
 # Plantweb configuration

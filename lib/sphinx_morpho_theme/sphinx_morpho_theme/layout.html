@@ -31,19 +31,11 @@
       href="{{ pathto('_static/pygments.css', True) }}"
     />
 
-    <!--Load other Sphinx registered CSSs-->
-    {% for cssfile in css_files -%}
+    <!--Load user CSS-->
+    {% if theme_user_style -%}
     <link
       type="text/css" rel="stylesheet"
-      href="{{ pathto(cssfile, 1) }}"
-    />
-    {%- endfor %}
-
-    <!--Load user override CSS-->
-    {% if style -%}
-    <link
-      type="text/css" rel="stylesheet"
-      href="{{ pathto('_static/' + style, True) }}"
+      href="{{ pathto('_static/' + theme_user_style, True) }}"
     />
     {%- endif %}
 
@@ -79,13 +71,13 @@
         src="{{ pathto('_static/js/morpho.js', True) }}"
       </script>
 
-      <!--Load other Sphinx registered JSs-->
-      {% for scriptfile in script_files -%}
+      <!--Load user JS-->
+      {% if theme_user_style -%}
       <script
         type="text/javascript"
-        src="{{ pathto(scriptfile, 1) }}"
+        src="{{ pathto(theme_user_style, 1) }}"
       </script>
-      {%- endfor %}
+      {%- endif %}
 
     </div>
 
