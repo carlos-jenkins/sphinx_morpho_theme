@@ -94,12 +94,6 @@ i.material-icons.permalink {
 .section li {
     line-height: 2.2em;
     margin-left: 2em;
-    font-size: 0.8em;
-}
-
-.section li * {
-    font-size: initial;
-    vertical-align: sub;
 }
 
 .section ul li {
