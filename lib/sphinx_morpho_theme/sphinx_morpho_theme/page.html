@@ -8,10 +8,17 @@
 {% endblock %}
 
 {% block sidebar %}
-<a class="collection-item" href="something.html">Word 1</a>
-<a class="collection-item" href="something.html">Word 2</a>
-<a class="collection-item" href="something.html">Word 3</a>
+<li><a href="something.html">Word 1</a></li>
+<li><a href="something.html">Word 2</a></li>
+<li><a href="something.html">Word 3</a></li>
 {% endblock %}
+
+{% block sidebarmobile %}
+<li><a href="something.html">Word 1</a></li>
+<li><a href="something.html">Word 2</a></li>
+<li><a href="something.html">Word 3</a></li>
+{% endblock %}
+
 
 {% block content %}
   {{ body }}

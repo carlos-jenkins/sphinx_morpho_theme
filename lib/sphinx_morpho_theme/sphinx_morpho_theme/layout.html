@@ -50,17 +50,17 @@
           <div class="row">
 
             <!--Logo-->
-            <div class="col l3">
+            <div class="col hide-on-small-only m3 l3">
               <a href="#" class="fixme">
                 <img id="logo" src="_static/images/logo.png" />
               </a>
             </div>
 
-            <div class="col l9">
+            <div class="col s12 m9 l9">
               <div class="row">
 
                 <!--Page Title and Search-->
-                <div class="col l12">
+                <div class="col s12 m12 l12">
                   <div class="page-title">
                     <span>Page Title</span>
                     <a class="fixme right" href="#fixme-search">
@@ -70,7 +70,7 @@
                 </div>
 
                 <!--Breadcrumbs-->
-                <div class="col l12 breadcrumbs">
+                <div class="col hide-on-small-only m12 l12 breadcrumbs">
 
                   <!--START breadcrumbs block-->
                   {% block breadcrumbs %} {% endblock %}
@@ -90,18 +90,29 @@
         <div class="container">
 
           <!--Left navigation bar-->
-          <div class="col s12 m4 l3">
-            <div id="side-nav" class="collection">
+          <div class="col hide-on-small-only m12 l3">
+            <div id="side-nav">
 
-              <!--START sidebar block-->
-              {% block sidebar %} {% endblock %}
-              <!--END sidebar block-->
+              <ul class="hide-on-small-only">
+                <!--START sidebar block-->
+                {% block sidebar %} {% endblock %}
+                <!--END sidebar block-->
+              </ul>
+
+              <ul id="slide-out" class="side-nav">
+                <!--START sidebarmobile block-->
+                {% block sidebarmobile %} {% endblock %}
+                <!--END sidebarmobile block-->
+              </ul>
+              <a href="#" data-activates="slide-out" class="button-collapse">
+                <i class="mdi-navigation-menu"></i>
+              </a>
 
             </div>
           </div>
 
           <!--Content pane-->
-          <div class="col s12 m8 l9">
+          <div class="col s12 m12 l9">
 
             <!--START content block-->
             {% block content %} {% endblock %}
