@@ -111,13 +111,18 @@
         <div class="container">
 
           <!--Left navigation bar-->
-          <div id="side-nav" class="col hide-on-small-only m12 l3">
+          <div class="col hide-on-small-only m12 l3">
 
-            <ul>
-              <!--START sidebar block-->
-              {% block sidebar %} {% endblock %}
-              <!--END sidebar block-->
-            </ul>
+            <div id="side-nav">
+              <h2>Table Of Contents</h2>
+
+              <ul>
+                <!--START sidebar block-->
+                {% block sidebar %} {% endblock %}
+                <!--END sidebar block-->
+              </ul>
+
+              </div>
 
           </div>
 
