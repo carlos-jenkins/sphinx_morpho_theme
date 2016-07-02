@@ -11,6 +11,16 @@ Documentation
     https://sphinx_morpho_theme.readthedocs.org/
 
 
+Options
+=======
+
+:theme_user_style:
+ Allows the user to set a additional CSS.
+
+:theme_user_script:
+ Allows the user to set a additional JS.
+
+
 License
 =======
 
