@@ -158,9 +158,22 @@ h6 a.toc-backref:hover {
     background-color: #2196F3;
 }
 
-.topic {
-    margin: 0.5em 0;
-    background-color: #FAFAFA;
+.topic.contents {
+    border-left: 5px solid #039BE5;
+}
+
+.topic.contents li {
+    list-style-type: none;
+    margin-left: 1em;
+}
+
+.topic.contents ul:before {
+    margin-left: 1.25em;
+    font-size: 0.8em;
+    padding-bottom: 0.8em;
+    font-weight: 400;
+    color: #757575;
+    content: "Contents";
 }
 
 .fixme {
@@ -281,15 +294,6 @@ object[type="image/svg+xml"] {
     display: None;
 }
 
-/* Table of contents */
-.topic.contents {
-    display: inline-block;
-    padding: 1em 3em 1em 1em;
-}
-
-.topic {
-    margin: 0.5em 0;
-}
 
 /*********************
  * Materialize fixes
