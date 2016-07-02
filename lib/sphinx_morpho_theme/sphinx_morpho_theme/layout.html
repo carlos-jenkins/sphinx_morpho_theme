@@ -59,13 +59,25 @@
             <div class="col s12 m9 l9">
               <div class="row">
 
-                <!--Page Title and Search-->
+                <!--Mobile Menu, Page Title and Search-->
                 <div class="col s12 m12 l12">
                   <div class="page-title">
+
+                    <!--Mobile Menu-->
+                    <a
+                      href="#"
+                      data-activates="slide-out"
+                      class="button-collapse">
+                      <i class="material-icons">menu</i>
+                    </a>
+
                     <span>Page Title</span>
+
+                    <!--Search Icon-->
                     <a class="fixme right" href="#fixme-search">
                       <i class="material-icons">search</i>
                     </a>
+
                   </div>
                 </div>
 
@@ -104,9 +116,6 @@
                 {% block sidebarmobile %} {% endblock %}
                 <!--END sidebarmobile block-->
               </ul>
-              <a href="#" data-activates="slide-out" class="button-collapse">
-                <i class="mdi-navigation-menu"></i>
-              </a>
 
             </div>
           </div>
