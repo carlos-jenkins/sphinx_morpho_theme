@@ -34,6 +34,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #2196F3;
 }
 
+h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+
 /*********************
  * reStructuredText
  *********************/
@@ -51,8 +56,20 @@ div.figure.align-left {
 }
 
 /* Responsive images */
+
 .container-wrapper img,
 object[type="image/svg+xml"] {
     max-width: 100%;
     height: auto;
 }
+
+/* Hide first title to display in header */
+
+div.section h1:first-child {
+    display: None;
+}
+
+
+/*********************
+ * Materialize fixes
+ *********************/

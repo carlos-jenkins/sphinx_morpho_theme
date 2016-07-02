@@ -10,7 +10,7 @@
     <!--Import Google Roboto and Material Icon Font-->
     <link
       type="text/css" rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Material+Icons"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400|Roboto+Mono|Material+Icons"
     />
 
     <!--Import Materialize CSS Framework-->
@@ -43,39 +43,67 @@
 
   <body>
 
-    <div class="morpho_viewport">
+    <nav>
+      <div class="nav-wrapper">
+        <div class="container">
+          <!--START navigation body-->
+          {% block navigation %} {% endblock %}
+          <!--END navigation body-->
+        </div>
+      </div>
+    </nav>
 
-      <!--START block body-->
-      {% block body %} {% endblock %}
-      <!--END block body-->
+    <main>
+      <div class="container">
 
-    </div>
+        <div class="row">
+          <div class="col s12 m4 l3">
+            <!--START sidebar body-->
+            {% block sidebar %} {% endblock %}
+            <!--END sidebar body-->
+          </div>
+
+          <div class="col s12 m8 l9">
+            <!--START block body-->
+            {% block body %} {% endblock %}
+            <!--END block body-->
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <!--START block footer-->
+      {% block footer %} {% endblock %}
+      <!--END block footer-->
+    </footer>
 
     <!--Load scripts-->
-    <div class="morpho_scripts">
+    <div class="scripts-loading">
 
       <!--Load libraries-->
       <script
         type="text/javascript"
-        src="{{ pathto('_static/libs/jquery-2.1.1/js/jquery.min.js', True) }}"
+        src="{{ pathto('_static/libs/jquery-2.1.1/js/jquery.min.js', True) }}">
       </script>
 
       <script
         type="text/javascript"
-        src="{{ pathto('_static/libs/materialize-0.97.6/js/materialize.min.js', True) }}"
+        src="{{ pathto('_static/libs/materialize-0.97.6/js/materialize.min.js', True) }}">
       </script>
 
       <!--Load Morpho-->
       <script
         type="text/javascript"
-        src="{{ pathto('_static/js/morpho.js', True) }}"
+        src="{{ pathto('_static/js/morpho.js', True) }}">
       </script>
 
       <!--Load user JS-->
       {% if theme_user_script -%}
       <script
         type="text/javascript"
-        src="{{ pathto(theme_user_script, 1) }}"
+        src="{{ pathto(theme_user_script, 1) }}">
       </script>
       {%- endif %}
 
