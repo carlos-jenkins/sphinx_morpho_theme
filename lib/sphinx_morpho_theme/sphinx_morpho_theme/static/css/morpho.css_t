@@ -2,16 +2,37 @@
  * Basic style
  *********************/
 
+@media only screen and (min-width: 0) {
+    html{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    html{
+        font-size: 14.5px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    html{
+        font-size: 15px;
+    }
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
     color: #3a4145;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    clear: both;
+code, kbd, pre, samp {
+    font-family: 'Roboto Mono', monospace;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+    color: #2196F3;
+}
 
 /*********************
  * reStructuredText
