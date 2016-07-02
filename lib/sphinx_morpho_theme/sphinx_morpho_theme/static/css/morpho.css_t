@@ -207,7 +207,22 @@ h6 a.toc-backref:hover {
 }
 
 #side-nav {
-    padding-top: 15px;
+    margin-top: 2em;
+}
+
+#side-nav ul {
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+#side-nav a {
+    display: block;
+    padding: 0.5em 1em;
+}
+
+#side-nav a:hover {
+    color: #FFFFFF;
+    background-color: #BDBDBD;
 }
 
 
