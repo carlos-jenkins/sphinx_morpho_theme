@@ -16,7 +16,7 @@
     <!--Import Materialize CSS Framework-->
     <link
       type="text/css" rel="stylesheet" media="screen,projection"
-      href="{{ pathto('_static/libs/materialize-0.97.6/css/materialize.min.css', True) }}"
+      href="{{ pathto('_static/libs/materialize-0.97.6/css/materialize.css', True) }}"
     />
 
     <!--Load Morpho CSS-->
@@ -51,8 +51,8 @@
 
             <!--Logo-->
             <div class="col hide-on-small-only m3 l3">
-              <a href="#" class="fixme">
-                <img id="logo" src="_static/images/logo.png" />
+              <a id="logo" href="#" class="fixme">
+                <img src="{{ pathto('_static/images/logo.png', True) }}" />
               </a>
             </div>
 
