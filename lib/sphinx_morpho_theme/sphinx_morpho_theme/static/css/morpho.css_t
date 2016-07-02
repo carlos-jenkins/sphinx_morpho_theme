@@ -25,9 +25,15 @@ body {
     color: #3a4145;
 }
 
-code, kbd, pre, samp {
+code, kbd, pre, samp, xmp, plaintext, listing {
     font-family: 'Roboto Mono', monospace;
 }
+
+pre, xmp, plaintext, listing {
+    margin: 0px;
+    padding: 1em;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     clear: both;
@@ -36,6 +42,55 @@ h1, h2, h3, h4, h5, h6 {
 
 h2, h3, h4, h5, h6 {
     font-weight: 300;
+}
+
+.fixme {
+    color: red;
+}
+
+
+/*********************
+ * Top Navigation Bar
+ *********************/
+
+#logo {
+    height: 64px;
+    margin: 20px auto 0 auto;
+    display: block;
+}
+
+#top-nav {
+    height: 122px;
+    box-shadow: none;
+}
+
+#top-nav .row {
+    margin-bottom: 0;
+}
+
+#top-nav .page-title {
+    font-size: 48px;
+    margin-top: 12px;
+}
+
+#top-nav .breadcrumbs {
+    line-height: 20px;
+}
+
+#top-nav .breadcrumb {
+    font-size: 0.8em;
+}
+
+#top-nav .breadcrumb:before {
+    font-size: 1em;
+}
+
+/*********************
+ * Navigation Sidebar
+ *********************/
+
+#side-nav {
+    margin-top: 15px;
 }
 
 

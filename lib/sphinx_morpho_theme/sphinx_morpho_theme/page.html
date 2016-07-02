@@ -1,24 +1,18 @@
 {%- extends "layout.html" %}
 
 
-{% block navigation %}
-<a href="#" class="brand-logo">Logo</a>
-<ul id="nav-mobile" class="right hide-on-med-and-down">
-  <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-  <li><a href="something.html">Word 1</a></li>
-  <li><a href="something.html">Word 2</a></li>
-  <li><a href="something.html">Word 3</a></li>
-</ul>
+{% block breadcrumbs %}
+<a class="breadcrumb" href="something.html">Sphinx Morpho Theme</a>
+<a class="breadcrumb" href="something.html">API Reference</a>
+<a class="breadcrumb" href="something.html">Language Test Document</a>
 {% endblock %}
 
 {% block sidebar %}
-<ul>
-  <li><a href="something.html">Word 1</a></li>
-  <li><a href="something.html">Word 2</a></li>
-  <li><a href="something.html">Word 3</a></li>
-</ul>
+<a class="collection-item" href="something.html">Word 1</a>
+<a class="collection-item" href="something.html">Word 2</a>
+<a class="collection-item" href="something.html">Word 3</a>
 {% endblock %}
 
-{% block body %}
+{% block content %}
   {{ body }}
 {% endblock %}

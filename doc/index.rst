@@ -5,7 +5,10 @@ Sphinx Morpho Theme
 .. image:: _static/images/logo.png
    :align: right
 
-Clean, materialized theme for Sphinx
+Clean, materialized theme for Sphinx.
+
+.. contents::
+   :local:
 
 
 Documentation

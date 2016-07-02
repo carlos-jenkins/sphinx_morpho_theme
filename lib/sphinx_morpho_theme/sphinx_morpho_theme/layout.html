@@ -43,33 +43,73 @@
 
   <body>
 
-    <nav>
+    <!--Top navigation bar-->
+    <nav id="top-nav">
       <div class="nav-wrapper">
         <div class="container">
-          <!--START navigation body-->
-          {% block navigation %} {% endblock %}
-          <!--END navigation body-->
+          <div class="row">
+
+            <!--Logo-->
+            <div class="col l3">
+              <a href="#" class="fixme">
+                <img id="logo" src="_static/images/logo.png" />
+              </a>
+            </div>
+
+            <div class="col l9">
+              <div class="row">
+
+                <!--Page Title and Search-->
+                <div class="col l12">
+                  <div class="page-title">
+                    <span>Page Title</span>
+                    <a class="fixme right" href="#fixme-search">
+                      <i class="material-icons">search</i>
+                    </a>
+                  </div>
+                </div>
+
+                <!--Breadcrumbs-->
+                <div class="col l12 breadcrumbs">
+
+                  <!--START breadcrumbs block-->
+                  {% block breadcrumbs %} {% endblock %}
+                  <!--END breadcrumbs block-->
+
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </nav>
 
     <main>
-      <div class="container">
+      <div class="row">
+        <div class="container">
 
-        <div class="row">
-          <div class="col s12 m4 l2">
-            <!--START sidebar body-->
-            {% block sidebar %} {% endblock %}
-            <!--END sidebar body-->
+          <!--Left navigation bar-->
+          <div class="col s12 m4 l3">
+            <div id="side-nav" class="collection">
+
+              <!--START sidebar block-->
+              {% block sidebar %} {% endblock %}
+              <!--END sidebar block-->
+
+            </div>
           </div>
 
-          <div class="col s12 m8 l10">
-            <!--START block body-->
-            {% block body %} {% endblock %}
-            <!--END block body-->
+          <!--Content pane-->
+          <div class="col s12 m8 l9">
+
+            <!--START content block-->
+            {% block content %} {% endblock %}
+            <!--END content block-->
+
           </div>
+
         </div>
-
       </div>
     </main>
 
