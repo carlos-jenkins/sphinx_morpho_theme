@@ -48,6 +48,18 @@ h2, h3, h4, h5, h6 {
     color: red;
 }
 
+a, a:visited {
+    transition: all 0.2s ease-in-out 0s;
+}
+
+a.headerlink {
+    opacity: 0.3;
+}
+
+a.headerlink:hover {
+    opacity: 1.0;
+}
+
 
 /*********************
  * Top Navigation Bar
@@ -89,7 +101,7 @@ h2, h3, h4, h5, h6 {
  * Navigation Sidebar
  *********************/
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 601px) {
     nav a.button-collapse {
         display: none;
     }

@@ -111,6 +111,7 @@ todo_include_todos = False
 # Adds an HTML table visitor to apply Bootstrap table classes
 # html_translator_class = 'sphinx_morpho_theme.HTMLTranslator'
 html_theme = 'sphinx_morpho_theme'
+html_translator_class = 'sphinx_morpho_theme.HTMLTranslator'
 
 # Register the theme as an extension to generate a sitemap.xml
 # extensions.append('sphinx_morpho_theme')

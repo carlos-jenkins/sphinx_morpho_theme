@@ -24,6 +24,8 @@ from __future__ import print_function, division
 
 from os.path import abspath, dirname
 
+from sphinx.writers.html import HTMLTranslator as SphinxHTMLTranslator
+
 __author__ = 'Carlos Jenkins'
 __email__ = 'carlos@jenkins.co.cr'
 __version__ = '0.1.0'
@@ -40,4 +42,16 @@ def html_theme_path():
     return abspath(dirname(__file__))
 
 
-__all__ = ['html_theme_path']
+class HTMLTranslator(SphinxHTMLTranslator):
+    """
+    Override HTML translation.
+    """
+    def __init__(self, builder, *args, **kwargs):
+        super(HTMLTranslator, self).__init__(builder, *args, **kwargs)
+
+        if self.permalink_text == '\u00B6':
+            self.permalink_text = \
+                '<i class="permalink material-icons">link</i>'
+
+
+__all__ = ['html_theme_path', 'HTMLTranslator']
