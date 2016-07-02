@@ -97,6 +97,15 @@
       </div>
     </nav>
 
+    <!--Left navigation bar for mobile-->
+    <div id="side-nav-mobile">
+      <ul id="slide-out" class="side-nav">
+        <!--START sidebarmobile block-->
+        {% block sidebarmobile %} {% endblock %}
+        <!--END sidebarmobile block-->
+      </ul>
+    </div>
+
     <main>
       <div class="row">
         <div class="container">
@@ -105,16 +114,10 @@
           <div class="col hide-on-small-only m12 l3">
             <div id="side-nav">
 
-              <ul class="hide-on-small-only">
+              <ul>
                 <!--START sidebar block-->
                 {% block sidebar %} {% endblock %}
                 <!--END sidebar block-->
-              </ul>
-
-              <ul id="slide-out" class="side-nav">
-                <!--START sidebarmobile block-->
-                {% block sidebarmobile %} {% endblock %}
-                <!--END sidebarmobile block-->
               </ul>
 
             </div>

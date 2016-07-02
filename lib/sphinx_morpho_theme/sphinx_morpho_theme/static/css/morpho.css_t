@@ -3,19 +3,19 @@
  *********************/
 
 @media only screen and (min-width: 0) {
-    html{
+    html {
         font-size: 14px;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    html{
+    html {
         font-size: 14.5px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    html{
+    html {
         font-size: 15px;
     }
 }
@@ -89,8 +89,14 @@ h2, h3, h4, h5, h6 {
  * Navigation Sidebar
  *********************/
 
+@media only screen and (min-width: 992px) {
+    nav a.button-collapse {
+        display: none;
+    }
+}
+
 #side-nav {
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 
