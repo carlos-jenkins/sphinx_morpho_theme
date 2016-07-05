@@ -52,7 +52,7 @@ body {
 }
 
 code, kbd, pre, samp, xmp, plaintext, listing {
-    font-family: 'Fira Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
 }
 
 pre, xmp, plaintext, listing {
