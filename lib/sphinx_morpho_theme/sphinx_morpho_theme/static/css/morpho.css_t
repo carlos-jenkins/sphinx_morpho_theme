@@ -125,12 +125,17 @@ a, a:visited {
     transition: all 0.2s ease-in-out 0s;
 }
 
+nav .breadcrumbs a,
 a.headerlink, a.footerlink {
     color: #90CAF9;
 }
 
 a:hover {
     color: #1976D2;
+}
+
+nav .nav-icon {
+    color: #FFFFFF;
 }
 
 h1 a.toc-backref,
@@ -184,7 +189,7 @@ h6 a.toc-backref:hover {
 }
 
 .fixme {
-    color: red;
+    color: red !important;
 }
 
 
