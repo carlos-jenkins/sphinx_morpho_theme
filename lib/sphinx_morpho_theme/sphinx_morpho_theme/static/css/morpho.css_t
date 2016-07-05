@@ -109,8 +109,14 @@ nav {
     background-color: #2196F3;
 }
 
-nav .breadcrumbs a:hover {
+nav .breadcrumbs a:hover,
+footer .footer-copyright a:hover {
     color: #FFFFFF;
+}
+
+footer.page-footer {
+  background-color: #2196F3;
+  text-align: center;
 }
 
 a, a:visited {
@@ -118,7 +124,7 @@ a, a:visited {
     transition: all 0.2s ease-in-out 0s;
 }
 
-a.headerlink {
+a.headerlink, a.footerlink {
     color: #90CAF9;
 }
 

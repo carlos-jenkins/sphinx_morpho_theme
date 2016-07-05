@@ -139,9 +139,14 @@
       </div>
     </main>
 
-    <footer>
+    <footer class="page-footer">
       <!--START block footer-->
-      {% block footer %} {% endblock %}
+      {% block footer %}
+      <div class="footer-copyright">
+        &copy; Copyright {{ copyright }}. Created using
+        <a class="footerlink" href="http://sphinx.pocoo.org/">Sphinx</a>.
+      </div>
+      {% endblock %}
       <!--END block footer-->
     </footer>
 
@@ -174,6 +179,5 @@
       {%- endif %}
 
     </div>
-
   </body>
 </html>
