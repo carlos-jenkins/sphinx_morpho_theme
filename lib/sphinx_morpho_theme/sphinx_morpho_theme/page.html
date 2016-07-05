@@ -14,7 +14,12 @@
 {% endblock %}
 
 {% block sidebarmobile %}
-{{ toc }}
+{% set toctree = toctree() %}
+    {% if toctree %}
+      {{ toctree }}
+    {% else %}
+      {{ toc }}
+    {% endif %}
 {% endblock %}
 
 
