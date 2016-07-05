@@ -2,9 +2,11 @@
 
 
 {% block breadcrumbs %}
-<a class="breadcrumb" href="something.html">Sphinx Morpho Theme</a>
-<a class="breadcrumb" href="something.html">API Reference</a>
-<a class="breadcrumb" href="something.html">Language Test Document</a>
+  <a class="breadcrumb" href="{{ pathto(master_doc) }}">Docs</a>
+  {% for doc in parents %}
+    <a class="breadcrumb" href="{{ doc.link|e }}">{{ doc.title }}</a>
+  {% endfor %}
+ <a class="breadcrumb" href="#">{{ title }}</a>
 {% endblock %}
 
 {% block sidebar %}
