@@ -157,14 +157,10 @@ h6 a.toc-backref:hover {
 }
 
 .admonition.attention,
+.admonition.caution,
 .admonition.warning {
     background-color: #FFF9C4;
     color: #F9A825;
-}
-
-.admonition.caution {
-    background: #fff3e0;
-    color: #dd2c00;
 }
 
 .admonition.danger,
