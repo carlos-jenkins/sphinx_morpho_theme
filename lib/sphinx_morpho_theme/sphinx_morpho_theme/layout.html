@@ -39,6 +39,31 @@
     />
     {%- endif %}
 
+    <!--Load libraries-->
+    <script
+      type="text/javascript"
+      src="{{ pathto('_static/libs/jquery-2.1.1/js/jquery.min.js', True) }}">
+    </script>
+
+    <script
+      type="text/javascript"
+      src="{{ pathto('_static/libs/materialize-0.97.6/js/materialize.min.js', True) }}">
+    </script>
+
+    <!--Load Morpho-->
+    <script
+      type="text/javascript"
+      src="{{ pathto('_static/js/morpho.js', True) }}">
+    </script>
+
+    <!--Load user JS-->
+    {% if theme_user_script -%}
+    <script
+      type="text/javascript"
+      src="{{ pathto(theme_user_script, 1) }}">
+    </script>
+    {%- endif %}
+
     <title>{{ shorttitle }}</title>
 
   </head>
@@ -53,7 +78,7 @@
 
             <!--Logo-->
             <div class="col hide-on-small-only m3 l3">
-              <a id="logo" href="#" class="fixme">
+              <a id="logo" href="/index.html" class="fixme">
                 <img src="{{ pathto('_static/images/logo.png', True) }}" />
               </a>
             </div>
@@ -76,7 +101,7 @@
                     <span>{{ title }}</span>
 
                     <!--Search Icon-->
-                    <a class="fixme nav-icon right" href="#fixme-search">
+                    <a class="fixme nav-icon right" href="search.html">
                       <i class="material-icons">search</i>
                     </a>
 
@@ -151,35 +176,5 @@
       {% endblock %}
       <!--END block footer-->
     </footer>
-
-    <!--Load scripts-->
-    <div class="scripts-loading">
-
-      <!--Load libraries-->
-      <script
-        type="text/javascript"
-        src="{{ pathto('_static/libs/jquery-2.1.1/js/jquery.min.js', True) }}">
-      </script>
-
-      <script
-        type="text/javascript"
-        src="{{ pathto('_static/libs/materialize-0.97.6/js/materialize.min.js', True) }}">
-      </script>
-
-      <!--Load Morpho-->
-      <script
-        type="text/javascript"
-        src="{{ pathto('_static/js/morpho.js', True) }}">
-      </script>
-
-      <!--Load user JS-->
-      {% if theme_user_script -%}
-      <script
-        type="text/javascript"
-        src="{{ pathto(theme_user_script, 1) }}">
-      </script>
-      {%- endif %}
-
-    </div>
   </body>
 </html>
