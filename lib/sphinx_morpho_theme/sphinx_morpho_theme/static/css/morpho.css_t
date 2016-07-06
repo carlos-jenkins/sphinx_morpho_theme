@@ -106,20 +106,6 @@ i.material-icons.permalink {
  * Colors
  *********************/
 
-nav {
-    background-color: #2196F3;
-}
-
-nav .breadcrumbs a:hover,
-footer .footer-copyright a:hover {
-    color: #FFFFFF;
-}
-
-footer.page-footer {
-  background-color: #2196F3;
-  text-align: center;
-}
-
 a, a:visited {
     color: #2196F3;
     transition: all 0.2s ease-in-out 0s;
@@ -132,6 +118,20 @@ a.headerlink, a.footerlink {
 
 a:hover {
     color: #1976D2;
+}
+
+footer .footer-copyright a:hover,
+nav .breadcrumbs a:hover {
+    color: #FFFFFF;
+}
+
+footer.page-footer {
+  background-color: #2196F3;
+  text-align: center;
+}
+
+nav {
+    background-color: #2196F3;
 }
 
 nav .nav-icon {
@@ -154,6 +154,35 @@ h4 a.toc-backref:hover,
 h5 a.toc-backref:hover,
 h6 a.toc-backref:hover {
     color: #1565C0;
+}
+
+.admonition.attention,
+.admonition.warning {
+    background-color: #FFF9C4;
+    color: #F9A825;
+}
+
+.admonition.caution {
+    background: #fff3e0;
+    color: #dd2c00;
+}
+
+.admonition.danger,
+.admonition.error {
+    background: #FBE9E7;
+    color: #D50000
+}
+
+.admonition.hint,
+.admonition.tip {
+    background: #E1F5FE;
+    color: #0288D1;
+}
+
+.admonition.note,
+.admonition.important {
+    background: #C8E6C9;
+    color: #4CAF50;
 }
 
 #side-nav {
@@ -306,6 +335,68 @@ object[type="image/svg+xml"] {
     display: None;
 }
 
+.admonition {
+    padding: 1px 15px;
+    margin: 15px 0;
+}
+
+.admonition .last {
+    font-weight: 300;
+}
+
+.admonition-title {
+    font-weight: bold;
+}
+
+.admonition .admonition-title::before {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    direction: ltr;
+    display: inline-block;
+    letter-spacing: normal;
+    line-height: 1;
+    padding-right: 10px;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.admonition.attention .admonition-title::before,
+.admonition.caution .admonition-title::before {
+    content: 'error';
+}
+
+.admonition.danger .admonition-title::before,
+.admonition.warning .admonition-title::before {
+    content: 'warning';
+}
+
+.admonition.error .admonition-title::before {
+    content: 'cancel';
+}
+
+.admonition.hint .admonition-title::before,
+.admonition.tip .admonition-title::before {
+    content: 'lightbulb_outline'
+}
+
+.admonition.important .admonition-title::before {
+    content: 'announcement';
+}
+
+.admonition.note .admonition-title::before {
+    content: 'info';
+}
 
 /*********************
  * Materialize fixes
