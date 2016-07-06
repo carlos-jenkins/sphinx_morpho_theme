@@ -181,6 +181,48 @@ h6 a.toc-backref:hover {
     color: #4CAF50;
 }
 
+.search-wrapper .search-input::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+
+.search-wrapper.search-active .search-input::-webkit-input-placeholder {
+    color: #BDBDBD;
+}
+
+.search-wrapper .nav-icon i {
+    color: #FFFFFF;
+}
+
+.search-wrapper.search-active .nav-icon i {
+    color: #BDBDBD;
+}
+
+.search-wrapper {
+    background-color: #64B5F6;
+    float: right;
+    height: 40px;
+    right: 0px;
+    width: 200px;
+    position: relative;
+    -webkit-transition-property: width right height background-color;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    transition-property: width left top;
+}
+
+.search-wrapper.search-active {
+    background-color: #FFFFFF;
+    float: right;
+    height: 40px;
+    right: 0px;
+    width: 400px;
+    position: relative;
+    -webkit-transition-property: width right height background-color;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+    transition-property: width left top;
+}
+
 #side-nav {
     background-color: #FAFAFA;
 }
@@ -257,6 +299,18 @@ h6 a.toc-backref:hover {
 
 #top-nav .breadcrumb:before {
     font-size: 1em;
+}
+
+.search-wrapper .search-input {
+    border: none;
+    float: right;
+    height: 40px;
+    width: 80%;
+}
+
+.search-wrapper .nav-icon i {
+    height: 40px;
+    line-height: 40px;
 }
 
 /*********************
