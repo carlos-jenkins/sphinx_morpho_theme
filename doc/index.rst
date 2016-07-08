@@ -18,7 +18,7 @@ Documentation
    :maxdepth: 1
 
    developer
-   Test Document <rst/language>
+   Test Document <rst/sample>
    API Reference <api/sphinx_morpho_theme>
 
 
